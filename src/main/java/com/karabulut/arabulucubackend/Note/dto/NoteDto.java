@@ -1,4 +1,4 @@
-package com.karabulut.arabulucubackend.dto;
+package com.karabulut.arabulucubackend.Note.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
