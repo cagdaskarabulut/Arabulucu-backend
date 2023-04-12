@@ -1,6 +1,7 @@
-package com.karabulut.arabulucubackend.controller;
+package com.karabulut.arabulucubackend.Note.controller;
 
-import com.karabulut.arabulucubackend.dto.NoteDto;
+import com.karabulut.arabulucubackend.Note.dto.NoteDto;
+import com.karabulut.arabulucubackend.Note.model.Note;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -34,9 +35,11 @@ public class NoteController {
         return "Get this note : " + noteId;
     }
 
-    @GetMapping("/")
-    public String getAllNotes() {
-        return "Get all notes ";
+    @GetMapping("/all")
+    public List<Note> getAllNotes() {
+//        return noteRepository.findAll();
+        return null;
     }
+
 
 }
